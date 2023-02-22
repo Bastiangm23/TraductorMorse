@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@500&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #635985;
+}
+
+.container{
+    height: 100vh;
+    background-color: #635985;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container>button{
+    width: 50%;
+    border-radius: 10px;
+    border-color: black;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    background: #443C68;
+    color: white;
+    transition: all 0.375s;
+}
+
+.container>button:hover{
+    background: #393053;
+}
+
+.translate_field{
+    border-radius: 25px;
+}
+
+.translate_field>textarea{
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid;
+    border-color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.translate_field>textarea:hover{
+    border: 2px solid;
+    border-color: white;
+}
+
+@media (width <= 700px){
+    .translate_field>textarea{
+        width: 90%;
+    }
+}
